@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Updated: Jun 18 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Sinhala audio transcribe - Tensorflow audio processing</h2>
+
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/sinhala_voice_2.png" class="img-fluid"alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/sinhala_voice.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/sinhala_voice_3.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/sinhala_voice_4.png" class="img-fluid" alt="">
+                </div>
+
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Machine learning</li>
+              <li><strong>Client</strong>: University of Kelaniya</li>
+             
+              <li><strong>Project URL</strong>: <a href="https://colab.research.google.com/drive/13kTj9bt862cMFvpuz9_B8AYIUKB-nAvJ?usp=sharing">https://colab.research.google.com/drive/13kTj9bt862cMFvpuz9_B8AYIUKB-nAvJ?usp=sharing</a></li>
+            </ul>
+
+          
+            <p>The goal of the project was to create an API endpoint
+                that would take in a wave file (audio file) , and would then 
+                transcribe the audio file. 
+            </p>
+            <p>The approach taken to accomplish this task as as follows</p>
+            <ul>
+                <li>1. Convert the wav file into a resampled 
+                    mono 16KHz format
+                </li>
+                <li>2. Convert the 16kHz formats to a spectograms</li>
+                <li>3. Train a CNN model on a dataset comprised of these
+                    spectorgrams.
+                </li>
+                <li>4. Load the model to a API endpoint to run inference</li>
+            </ul>
+
+            <p>Here the model was trained on a selected list of 
+                sinhala words where a batch of audio samples was
+                collected for each sinhala word. 
+            </p>
+            <p>The audio samples where then converted to spectograms which were 
+                then used to trian the CNN model. 
+                The model reached an overall validation accuracy of 60%. 
+                More training with higher quality samples would lead to 
+                better validation accuracy. 
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
